@@ -20,7 +20,8 @@ def menu1(): #definition/fonksiyon
     seçim = input()
     if seçim == '1' :
         print('Görevleri seçtiniz')
-        import Görevler
+        import gorevler
+        gorevler.gmenu()
         menu1()
     if seçim == '2' :
         print('Oyunları Seçtiniz')
