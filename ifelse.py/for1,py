@@ -1,0 +1,17 @@
+# print(*range(2,8)) #iterable nesnedir
+
+for a in range(10):
+    # print("vektörel",a)
+    print(a,". sayı")
+
+for bb in range(5,12):
+    print(bb,bb*2)
+
+for bb in range (3,15,4):
+    print(bb)
+
+for c in "Vektörel":
+    print(c)
+
+meyveler = ["muz ","dut ","nar "]
+for cc in meyveler: print(cc*2)
