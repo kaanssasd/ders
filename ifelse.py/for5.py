@@ -18,3 +18,4 @@ for ddd in range (10):
     for a in range(4):
         forward(kenaru); right(90)
 input()
+
