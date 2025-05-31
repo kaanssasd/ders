@@ -1,51 +1,37 @@
-def toplama(x, y):
-    return x + y
-
-def cikarma(x, y):
-    return x - y
-
-def carpma(x, y):
-    return x * y
-
-def bolme(x, y):
-    if y == 0:
-        return "Hata: Sıfıra bölünemez!"
-    return x / y
-
-def hesap_makinesi():
-    print("=== HESAP MAKİNESİ ===")
-    print("1. Toplama")
-    print("2. Çıkarma")
-    print("3. Çarpma")
-    print("4. Bölme")
-    print("5. Çıkış")
-
+def main():
     while True:
-        secim = input("İşlem seçin (1/2/3/4/5): ")
+        print("\033[1;33;40m")  # Sarı renk
+        print("=== HESAP MAKİNESİ ===")
+        print("1. Toplama")
+        print("2. Çıkarma")
+        print("3. Çarpma")
+        print("4. Bölme")
+        print("5. Ana menüye dön")
+
+        secim = input("İşlem seçin (1-5): ")
 
         if secim == '5':
-            print("Çıkılıyor...")
             break
 
         try:
-            sayi1 = float(input("Birinci sayıyı girin: "))
-            sayi2 = float(input("İkinci sayıyı girin: "))
+            x = float(input("1. Sayı: "))
+            y = float(input("2. Sayı: "))
         except ValueError:
-            print("Lütfen geçerli bir sayı girin!")
+            print("Geçersiz sayı girdiniz!")
             continue
 
         if secim == '1':
-            print("Sonuç:", toplama(sayi1, sayi2))
+            print("Sonuç:", x + y)
         elif secim == '2':
-            print("Sonuç:", cikarma(sayi1, sayi2))
+            print("Sonuç:", x - y)
         elif secim == '3':
-            print("Sonuç:", carpma(sayi1, sayi2))
+            print("Sonuç:", x * y)
         elif secim == '4':
-            print("Sonuç:", bolme(sayi1, sayi2))
+            if y == 0:
+                print("Sıfıra bölünemez!")
+            else:
+                print("Sonuç:", x / y)
         else:
-            print("Geçersiz seçim!")
+            print("Geçersiz işlem!")
 
-        print("\n----------------------\n")
-
-# Programı başlat
-hesap_makinesi()
+        print("\n--------------------------\n")
