@@ -1,0 +1,1 @@
+open("c://kaan/rehber1.txt","a")

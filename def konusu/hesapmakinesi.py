@@ -1,6 +1,6 @@
 def main():
     while True:
-        print("\033[1;33;40m")  # Sarı renk
+        print("\033[1;33;40m")  
         print("=== HESAP MAKİNESİ ===")
         print("1. Toplama")
         print("2. Çıkarma")

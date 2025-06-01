@@ -4,6 +4,7 @@ import hesapmakinesi
 import kahveler 
 
 def menu1():
+
     while True:
         print("\033[1;32;40m")
         print("╔═════════════════════╗")

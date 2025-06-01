@@ -1,0 +1,5 @@
+print("+"*10,"KAYIT İŞLEMİ","-"*10)
+ad = input("Ad giriniz      :  ")
+nu = input("Numara giriniz:  ")
+d=open(f"rehber.txt","a")
+d.write(f"{ad}#{nu}#\n")

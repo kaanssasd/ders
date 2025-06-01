@@ -1,14 +1,14 @@
 kahve_listesi = [
-    {"ad": "Espresso", "fiyat": 30},
-    {"ad": "Latte", "fiyat": 35},
-    {"ad": "Cappuccino", "fiyat": 34},
-    {"ad": "Türk Kahvesi", "fiyat": 28},
-    {"ad": "Mocha", "fiyat": 38}
+    {"ad": "Espresso", "fiyat": 100},
+    {"ad": "Latte", "fiyat": 120},
+    {"ad": "Cappuccino", "fiyat": 130},
+    {"ad": "Türk Kahvesi", "fiyat": 150},
+    {"ad": "Mocha", "fiyat": 140}
 ]
 
 def kahve_menu():
     while True:
-        print("\033[1;35;40m")  # Mor renk
+        print("\033[1;35;40m")  
         print("╔══════════════════════╗")
         print("║     KAHVE MENÜSÜ     ║")
         print("╚══════════════════════╝")
@@ -17,7 +17,7 @@ def kahve_menu():
             print(f"{i}. {kahve['ad']} - {kahve['fiyat']}₺")
 
         print("\nBir kahve seçin (0 - Ana menü): ")
-        secim = input(">> ").strip()  # ← boşlukları temizliyor
+        secim = input(">> ").strip()  
 
         if secim == '0':
             print("Ana menüye dönülüyor...")
